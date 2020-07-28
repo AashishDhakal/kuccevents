@@ -10,7 +10,7 @@
         <h3> {{ event.event_name }} </h3>
         <p>Event Date: {{ event.event_date }}</p>
         <p>Event Time: {{ event.event_time }}</p>
-        <button> Get Event Detail</button>
+        <a href="{% url 'eventdetail' event.id  %}"><button> Get Event Detail</button></a>
     {% endfor %}
 </body>
 </html>

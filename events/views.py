@@ -4,7 +4,7 @@ from .models import Event
 # Create your views here.
 
 def EventListView(request):
-    all_events = Event.objects.all()
+    all_events = Event.objects.all().order_by('event_date')
     return render(request, 'eventlist.html', {'allevents': all_events, })
 
 def EventDetailView(request, pk):
