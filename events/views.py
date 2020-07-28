@@ -5,4 +5,4 @@ from .models import Event
 
 def EventListView(request):
     all_events = Event.objects.all()
-    return render(request, 'eventlist.html')
+    return render(request, 'eventlist.html', {'allevents':all_events, })
