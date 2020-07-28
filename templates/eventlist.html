@@ -8,11 +8,9 @@
     <h1>All Events</h1>
     {% for event in allevents %}
         <h3> {{ event.event_name }} </h3>
-        <p> {{ event.event_description }}</p>
-        <p>Organized by: {{ event.organizer }}</p>
-        <p>Sponsored by: {{ event.sponsor }}</p>
         <p>Event Date: {{ event.event_date }}</p>
         <p>Event Time: {{ event.event_time }}</p>
+        <button> Get Event Detail</button>
     {% endfor %}
 </body>
 </html>
